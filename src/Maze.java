@@ -146,7 +146,9 @@ public class Maze {
      * @return boolean true/false
      */
     public boolean isValidCell(int row, int col) {
-        // TODO: Complete this function
-        return true;
+        if (row < 0 || col < 0 || row >= numRows || col >= numCols)
+            return false;
+
+        return !(mazeGrid[row][col].isExplored() || mazeGrid[row][col].isWall());
     }
 }

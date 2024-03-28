@@ -58,6 +58,7 @@ public class MazeTester {
                 return;
             }
         }
+        maze.printSolution(received);
 
         System.out.println("Test Get Solution Passed!");
     }
